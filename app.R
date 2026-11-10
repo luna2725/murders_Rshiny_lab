@@ -231,15 +231,12 @@ server <- function(input, output) {
     }
   )
 }
-  # 이미 있는 server 함수의 마지막 중괄호
-
-shiny::shinyApp(ui = ui, server = server)
 
 
 # ------------------------------------------------------------
 # Run the app
 # ------------------------------------------------------------
-shinyApp(ui, server)
+shiny::shinyApp(ui = ui, server = server)
 
 
 # ============================================================
@@ -268,7 +265,3 @@ shinyApp(ui, server)
 #   [ ] Are there no files in the folder that must not be uploaded (personal data, etc.)? -> the whole folder goes to the server
 # ============================================================
 
-
-# Posit Cloud Connect
-# install.packages("rsconnect")
-rsconnect::writeManifest()
